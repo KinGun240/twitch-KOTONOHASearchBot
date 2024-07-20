@@ -16,7 +16,7 @@ import glob
 
 
 # バージョン
-ver = '1.0.0'
+ver = '1.0.1'
 
 # 固定値
 ErrorLogFile = "error.log"
@@ -140,7 +140,7 @@ class Bot(commands.Bot):
     # bot起動時処理 ----------
     async def event_channel_joined(self, channel: Channel):
         print(f"{configKOTONOHASearch.Bot_ChannelName}が監視を始めました")
-#        await channel.send(configKOTONOHASearch.Twitch_ChannelName, f"/color {configKOTONOHASearch.TextColor}")
+        await channel.send(f"/color {configKOTONOHASearch.TextColor}")
         await channel.send(f"{configKOTONOHASearch.Bot_ChannelName}が監視を始めました")
 
         # 書き込み開始のファイル出力
@@ -202,7 +202,7 @@ class Bot(commands.Bot):
             for word in row:
                 if word in text and word != "":
                     #print('\033[35m'+f'{word.upper()}'+'\033[0m')
-                    ng_word_list.append(f'{word.upper()}' + '->' + NGwordList.at[index, 'Key'])
+                    ng_word_list.append(f'{word.upper()}' + '->' + row.iloc[0])
                     print(f' -> NGword:{word.upper()}')
         if ng_word_list:
             IsNGword = True
