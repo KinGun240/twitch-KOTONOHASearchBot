@@ -42,6 +42,9 @@ NGワードを察知すると、発言者へのリプライと、音声を流し
 * Github  
   https://github.com/KinGun240
 
+素材はこちらからお借りしました。
+わたおきば(https://wataokiba.net/)
+
 ## 参考
 * [Twitchにチャット翻訳botを導入する](https://note.com/tatsuya_iwama/n/nc42feebbb53d)
 * [翻訳ちゃんFreeNextの導入・使用方法](https://croom.sytes.net/trans/)
