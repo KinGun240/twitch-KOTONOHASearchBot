@@ -19,5 +19,4 @@ IsPlaySoundNGword = True
 # NGワードの音声ファイル
 NGwordSound = 'alert_echo.wav'
 # NGワードの音声のボリューム
-NGwordVolume = 70
-
+NGwordVolume = 50
