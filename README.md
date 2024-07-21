@@ -26,11 +26,16 @@ NGワードを察知すると、発言者へのリプライと、音声を流し
 # 機能説明
 * **コメントログ保存**  
   チャット欄のコメントを、CSVファイルに保存します。
-  > ファイルへの保存については、[param_KOTONOHASearchBot.py]からON/OFFが可能です。
+  > ファイルへの保存については、[param_KOTONOHASearchBot.py]からON/OFFが可能です。  
+  > デフォルトではOFFです。  
 * **NGワード察知**  
-  コメントにNGワードが存在する場合、[param_KOTONOHASearchBot.py]で指定された音声を鳴らします。  
+  コメントにNGワードが存在する場合、発言者にNGワードをリプライし、  
+  さらに[param_KOTONOHASearchBot.py]で指定された音声を鳴らします。  
+  > リプライについては、[param_KOTONOHASearchBot.py]からON/OFFが可能です。  
+  > デフォルトではONです。  
   > 音声については、[param_KOTONOHASearchBot.py]からON/OFFが可能です。  
-  > 鳴らす音声ファイルは、[param_KOTONOHASearchBot.py]から変更が可能です。
+  > デフォルトではONです。  
+  > 鳴らす音声ファイルは、[param_KOTONOHASearchBot.py]から変更が可能です。  
 
 # その他
 本ソフトウェアを利用した場合の一切の責任を私は負いません、よろしくお願いします。  
